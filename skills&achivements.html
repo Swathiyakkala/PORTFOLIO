@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <title>a</title>
+    <style>
+        .skill{
+            margin:10px 0;
+        }
+        .skill-name{
+            font-weight: bold;
+            color:white;
+        }
+        .skill-bar{
+            width:50%;
+            background-color: #e0e0e0;
+}
+
+.bar-fill {
+    height: 20px;
+    background-color:brown; /* Customize the bar color */
+    position: relative;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    flex: 1;
+    display: none;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.slider-radio {
+    display: none;
+}
+
+.slider-radio:checked + .slide {
+    display: block;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slider-pagination-item {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.slider-pagination-item:hover {
+    background-color: white;
+}
+        
+    </style>
+    <body style="background-color: #000;">
+        <h1 style="color:white;">MY SKILLS</h1>
+        <div class="skill">
+    <div class="skill-name">html</div>
+    <div class="skill-bar">
+        <div class="bar-fill" style="width: 80%;"></div>
+        
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">css</div>
+    <div class="skill-bar">
+        <div class="bar-fill" style="width: 70%;"></div>
+       
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">python</div>
+    <div class="skill-bar">
+        <div class="bar-fill" style="width: 60%;"></div>
+        
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">c</div>
+    <div class="skill-bar">
+        <div class="bar-fill" style="width: 50%;"></div>
+       
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">javascript</div>
+    <div class="skill-bar">
+        <div class="bar-fill" style="width: 50%;"></div>
+        
+    </div>
+</div>
+
+<h1 style="color:white;">MY ACHIVEMENTS</h1>
+<div class="slider">
+    <input type="radio" name="slider" class="slider-radio" id="slide1" checked>
+    <div class="slide">
+        <h4 style="color:white;" >Recently, I Completed My HTML Course Also.I Got Certificate.</h4>
+        <img src="static/html.jpg" alt="Image 1">
+    </div>
+
+    <input type="radio" name="slider" class="slider-radio" id="slide2">
+    <div class="slide">
+        <h4 style="color:white;">I Completed My Python Course On Edyst Platform. And I Got My Certificate On Completion Of Python course. Here It Is.</h4>
+        <img src="static/python1.jpg" alt="Image 2">
+    </div>
+
+    <input type="radio" name="slider" class="slider-radio" id="slide3">
+    <div class="slide">
+        <h4 style="color:white;">Recently, I Completed My CSS Course In Udemy Platform. I Got Certificate On Udemy Platform.</h4>
+        <img src="static/css.jpg" alt="Image 3">
+    </div>
+
+    <div class="slider-pagination">
+        <label for="slide1" class="slider-pagination-item"></label>
+        <label for="slide2" class="slider-pagination-item"></label>
+        <label for="slide3" class="slider-pagination-item"></label>
+    </div>
+</div>
+
+       
+    </body>
+</html>
